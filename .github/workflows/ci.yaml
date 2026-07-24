@@ -16,7 +16,7 @@ jobs:
       - uses: frenck/action-addon-linter@v2.21
         with:
           path: ./youtube_audio_downloader
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: pip install yamllint==1.37.1 pyyaml==6.0.2
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7.0.0
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
