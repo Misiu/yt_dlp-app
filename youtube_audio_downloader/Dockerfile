@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.18
-FROM node:24.18.0-alpine3.24@sha256:a0b9bf06e4e6193cf7a0f58816cc935ff8c2a908f81e6f1a95432d679c54fbfd AS frontend
+FROM node:24.19.0-alpine3.24@sha256:d32cdf619f63fe0471182d08996dd516c6275bb5fd31ae06e55a570bd9e1ad43 AS frontend
 
 WORKDIR /build
 COPY rootfs/app/frontend/package.json rootfs/app/frontend/package-lock.json ./
@@ -9,7 +9,7 @@ RUN npm run check && npm test && npm run build
 
 FROM ghcr.io/home-assistant/base:3.24@sha256:94ff231402a5e7ad2a82e261ad5fa4ffae7d7bb095c3febb2edbdf309c9b6aca
 
-ARG BUILD_VERSION=0.1.8
+ARG BUILD_VERSION=0.1.9
 ARG BUILD_ARCH
 
 RUN apk add --no-cache \
