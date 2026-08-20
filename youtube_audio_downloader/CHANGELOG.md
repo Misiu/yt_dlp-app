@@ -2,6 +2,15 @@
 
 All notable changes to this App are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and versions follow Semantic Versioning.
 
+## [0.1.9] - 2026-08-20
+
+### Changed
+
+- Refresh Python runtime and development dependencies with synchronized lock files.
+- Update frontend lint, type-check, test, DOM, accessibility, and build tooling to compatible current releases.
+- Update the frontend build image to Node.js 24.19.0 LTS and keep automatic Docker updates on the current major LTS line.
+- Check Python dependencies daily and keep yt-dlp updates in their own Dependabot pull request for faster visibility.
+
 ## [0.1.8] - 2026-08-20
 
 ### Fixed
@@ -100,6 +109,7 @@ All notable changes to this App are documented here. The format follows [Keep a 
 - Backend/frontend tests, strict lint/type checks, App metadata validation, image smoke build, dependency automation, and release workflow.
 - Ingress source enforcement and Home Assistant-recommended 128x128 icon and 250x100 logo assets.
 
+[0.1.9]: https://github.com/Misiu/yt_dlp-app/compare/v0.1.8...v0.1.9
 [0.1.8]: https://github.com/Misiu/yt_dlp-app/compare/v0.1.7...v0.1.8
 [0.1.7]: https://github.com/Misiu/yt_dlp-app/compare/v0.1.6...v0.1.7
 [0.1.6]: https://github.com/Misiu/yt_dlp-app/compare/v0.1.5...v0.1.6

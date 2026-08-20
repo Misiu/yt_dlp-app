@@ -1,7 +1,7 @@
 {
   "name": "youtube-audio-downloader-frontend",
   "private": true,
-  "version": "0.1.8",
+  "version": "0.1.9",
   "type": "module",
   "scripts": {
     "build": "vite build",
@@ -14,16 +14,16 @@
     "lit": "3.3.3"
   },
   "devDependencies": {
-    "@eslint/js": "9.31.0",
-    "@types/node": "24.0.15",
-    "axe-core": "4.11.0",
-    "eslint": "9.31.0",
-    "eslint-plugin-lit": "2.1.1",
-    "globals": "16.3.0",
-    "jsdom": "26.1.0",
-    "typescript": "5.8.3",
-    "typescript-eslint": "8.37.0",
-    "vite": "7.3.6",
-    "vitest": "3.2.7"
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.13.3",
+    "axe-core": "4.13.0",
+    "eslint": "10.8.1",
+    "eslint-plugin-lit": "2.3.1",
+    "globals": "17.11.0",
+    "jsdom": "30.0.1",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.67.0",
+    "vite": "8.2.2",
+    "vitest": "4.1.11"
   }
 }
