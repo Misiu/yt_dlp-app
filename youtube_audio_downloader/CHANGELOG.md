@@ -2,6 +2,17 @@
 
 All notable changes to this App are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and versions follow Semantic Versioning.
 
+## [0.1.8] - 2026-08-20
+
+### Fixed
+
+- Update yt-dlp to 2026.08.19 so YouTube downloads no longer use the broken `android_vr` client by default, which caused HTTP 403 errors while fetching audio streams.
+
+### Changed
+
+- Refresh compatible Python runtime and development dependencies and the generated lock files.
+- Update the pinned GitHub checkout and Python setup actions.
+
 ## [0.1.7] - 2026-07-17
 
 ### Added
@@ -89,6 +100,7 @@ All notable changes to this App are documented here. The format follows [Keep a 
 - Backend/frontend tests, strict lint/type checks, App metadata validation, image smoke build, dependency automation, and release workflow.
 - Ingress source enforcement and Home Assistant-recommended 128x128 icon and 250x100 logo assets.
 
+[0.1.8]: https://github.com/Misiu/yt_dlp-app/compare/v0.1.7...v0.1.8
 [0.1.7]: https://github.com/Misiu/yt_dlp-app/compare/v0.1.6...v0.1.7
 [0.1.6]: https://github.com/Misiu/yt_dlp-app/compare/v0.1.5...v0.1.6
 [0.1.5]: https://github.com/Misiu/yt_dlp-app/compare/v0.1.4...v0.1.5

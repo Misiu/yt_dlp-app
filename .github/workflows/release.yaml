@@ -15,8 +15,8 @@ jobs:
       matrix: ${{ steps.matrix.outputs.matrix }}
       version: ${{ steps.version.outputs.version }}
     steps:
-      - uses: actions/checkout@v7.0.0
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: pip install pyyaml==6.0.2
@@ -45,7 +45,7 @@ jobs:
       fail-fast: false
       matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
     steps:
-      - uses: actions/checkout@v7.0.0
+      - uses: actions/checkout@v7.0.1
       - uses: home-assistant/builder/actions/build-image@2026.06.0
         with:
           arch: ${{ matrix.arch }}
@@ -87,7 +87,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v7.0.0
+      - uses: actions/checkout@v7.0.1
       - env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh release create "${GITHUB_REF_NAME}" --verify-tag --title "YouTube Audio Downloader ${{ needs.prepare.outputs.version }}" --notes-file youtube_audio_downloader/CHANGELOG.md
