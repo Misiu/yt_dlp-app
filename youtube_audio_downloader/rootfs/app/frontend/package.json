@@ -10,20 +10,20 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@home-assistant/webawesome": "3.7.0-ha.0",
+    "@home-assistant/webawesome": "3.7.0-ha.1",
     "lit": "3.3.3"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
-    "@types/node": "24.13.3",
+    "@types/node": "24.13.6",
     "axe-core": "4.13.0",
-    "eslint": "10.8.1",
+    "eslint": "10.11.0",
     "eslint-plugin-lit": "2.3.1",
-    "globals": "17.11.0",
-    "jsdom": "30.0.1",
+    "globals": "17.12.0",
+    "jsdom": "30.1.1",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.67.0",
-    "vite": "8.2.2",
-    "vitest": "4.1.11"
+    "typescript-eslint": "8.70.1",
+    "vite": "8.3.0",
+    "vitest": "5.0.1"
   }
 }
