@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.18
-FROM node:24.19.0-alpine3.24@sha256:d32cdf619f63fe0471182d08996dd516c6275bb5fd31ae06e55a570bd9e1ad43 AS frontend
+FROM node:24.22.0-alpine3.24@sha256:44fce696f38ba8c987c4db89954051000bbd05ffd8d8659ba15ed4a8602e937f AS frontend
 
 WORKDIR /build
 COPY rootfs/app/frontend/package.json rootfs/app/frontend/package-lock.json ./
